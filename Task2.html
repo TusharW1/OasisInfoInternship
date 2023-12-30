@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tushar's Portfolio</title>
+    <link rel="stylesheet" href="task2style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <!-- <p>Front-end Web Developer</p> -->
+                <h1>Hi, I'm <span>Tushar Waghmare</span></h1>
+                <p>Front-end Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <!----------------------About----------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://cdn.filestackcontent.com/efbSR18hT5uRKuo0zoMA"  height="400px" width="400px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="text">I am a front-end web developer from Pune district. I pursued my studies in
+                        Computer Science & Information Technology at Nutan Maharashtra Institute of Engineering and Technology in Talegaon and has honed my skills in
+                        the field. With my strong technical background and passion for creating visually appealing and
+                        user-friendly websites, I dedicated to delivering exceptional results for my clients.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>B.E in Computer Science & Informtion Technology at Nutan Maharashtra Institute of Engineering and Technology</li>
+                            <li><span>2019 - 2020</span><br>12th at D.B.F. Dayanand College of Arts and Science, Solapur. </li>
+                            <li><span>2018 - 2019</span><br>10th at Padmashree Sumatibai English Medium High School, Solapur.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Front-end Web Development</span><br> Websites Development</li>
+                            <li><span>Programming Language</span><br>Java,Python,C++ </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Internship</span><br>There is no Past Internship here</li>
+                            <li><span>Job</span><br>There is no Past Job here</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services------------- -->
+
+
+    <!-------------portfolio----------- -->
+   
+                <div class="work">
+                    <img src="https://cdn.dribbble.com/users/631898/screenshots/2591210/day_4.png">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Get quick and accurate answers with our simple calculator. Designed with ease of use in mind,
+                            this calculator performs basic arithmetic operations such as addition, subtraction,
+                            multiplication, and division. Whether you're solving mathematical problems at school, work,
+                            or in your daily life.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+               
+
+               
+                <div class="work">
+                    <img src="https://cdnwp.mobidea.com/academy/wp-content/uploads/2017/12/what-is-a-landing-page.jpg">
+                    <div class="layer">
+                        <h3>Landing Page for a website</h3>
+                        <p>High-Level Landing Page.Flower Delivery from independent florists in the India!</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------contact------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>tusharwaghmare525@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9325628590</p>
+                    <div class="social-icons">
+                        
+                        <a href="https://twitter.com/1tusharwaghmare" target="_blank"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/tushar.waghmare1/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tushar-waghmare-360582232/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/TusharW1?tab=repositories" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="C:\Users\tusha\OneDrive\Documents\TusharDocs\TResume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Hello</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169; Tushar Waghmare <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzy3xQugQWsRSac2pvd4tePHy1sk44c1_cJOimclAUcqwzbPNWSw_I01PxkEA1-w8Ep/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
